@@ -1,0 +1,347 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #4e73df;
+    transition: width 0.3s ease;
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ad{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.ad-name{
+    width: 160px;
+    height: auto;
+    padding: 30px 30px;
+    display: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+.ad img{
+    width: 40px;
+    height: 40px;
+    padding: 15px 15px;
+    transition: 0.3s ease;
+}
+
+.sidebar-icons {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    color: white;
+}
+
+.icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon i {
+    font-size: 20px;
+    color: rgb(155, 155, 155);
+}
+
+
+.icon span {
+    color: rgb(155, 155, 155);
+    opacity: 0;
+    position: absolute;
+}
+
+.icon:hover i,
+.icon:hover span{
+    color: white;
+}
+
+.icon1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon1 i {
+    font-size: 20px;
+    color: white;
+}
+
+
+.icon1 span {
+    color: white;
+    opacity: 0;
+    position: absolute;
+}
+
+/* Khi hover vào sidebar */
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar:hover span{
+    width: 140px;
+}
+
+.sidebar:hover .ad-name{
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.sidebar:hover img{
+    transform: translateX(125px);
+}
+
+.sidebar:hover span {
+    opacity: 1;
+    left: calc(100% + 10px);
+    align-items: center;
+}
+
+.ad-name:hover{
+    cursor: pointer;
+}
+
+/*Danh sach cac phi,*/
+
+.noti{
+    font-size: 18px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    transition: 0.2s;
+}
+
+.h2-header{
+    margin: auto;
+    width: 25%;
+    height: auto;
+}
+
+.movie-container{
+    margin: auto;
+    height: 150px;
+    width: 60%;
+    display: flex;
+    object-fit: fill;
+}
+
+.movie{
+    height: 100%;
+    width: fit-content;
+    margin-right: 20px;
+    border-radius: 5px;
+    opacity: 1;
+    object-fit: fill;
+}
+
+.movie img{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.movie img:hover{
+    transition: 0.25s;
+    padding-bottom: -20px;
+    cursor: pointer;
+}
+
+.movie.hidden{
+    opacity: 0;
+    position: absolute;
+}
+
+/*Nut chuyen danh sach*/
+.pagination {
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    padding-left: 48%;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 25%;
+    background-color: #ffffff;
+}
+
+.prev{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.next{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/*Them phim*/
+.add {
+    width: 60%;
+    margin: 3% auto;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Chữ "Thêm phim" */
+.add-text {
+    margin-right: 5px;
+}
+
+/* Đảo ngược icon khi được click */
+#icon.clicked {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  
+/* Form container */
+.form-container {
+    width: 60%;
+    margin: -2% auto;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+}
+
+input[type="text"],
+input[type="number"]{
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+}
+
+select {
+    width: 10%;
+    height: 30px;
+    text-align: center;
+}
+
+#addMovieForm input[type="submit"] {
+    background-color: red;
+    position: relative;
+    left: 90%;
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* CSS khi rê chuột vào nút */
+#addMovieForm input[type="submit"]:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.del {
+    width: 60%;
+    margin: 3% auto;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Chữ "Thêm phim" */
+.del-text {
+    margin-right: 5px;
+}
+
+/* CSS cho form xóa phim */
+.delete {
+    width: 60%;
+    margin: 3% auto;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Chữ "Xóa phim" */
+.delete-text {
+    margin-right: 5px;
+}
+
+#movieToDelete {
+    width: 50%;
+    height: 30px;
+}
+/* Form container xóa phim */
+.form-container-delete {
+    width: 60%;
+    margin: -2% auto;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+}
+
+.form-container-delete input[type="submit"] {
+    background-color: red;
+    position: relative;
+    left: 90%;
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* CSS khi rê chuột vào nút */
+.form-container-delete input[type="submit"]:hover {
+    background-color: green;
+}

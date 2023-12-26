@@ -1,0 +1,279 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #4e73df;
+    transition: width 0.3s ease;
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ad{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.ad-name{
+    width: 160px;
+    height: auto;
+    padding: 30px 30px;
+    display: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+.ad img{
+    width: 40px;
+    height: 40px;
+    padding: 15px 15px;
+    transition: 0.3s ease;
+}
+
+.sidebar-icons {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    color: white;
+}
+
+.icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon i {
+    font-size: 20px;
+    color: rgb(155, 155, 155);
+}
+
+
+.icon span {
+    color: rgb(155, 155, 155);
+    opacity: 0; /* Ẩn đi mặc định */
+    position: absolute;
+}
+
+.icon:hover i,
+.icon:hover span{
+    color: white;
+}
+
+.icon1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon1 i {
+    font-size: 20px;
+    color: white;
+}
+
+
+.icon1 span {
+    color: white;
+    opacity: 0; /* Ẩn đi mặc định */
+    position: absolute;
+}
+
+/* Khi hover vào sidebar */
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar:hover span{
+    width: 140px;
+}
+
+.sidebar:hover .ad-name{
+    display: block;
+    position: absolute; /* Để p xuất hiện bên trái của ảnh */
+    top: 0;
+}
+
+.sidebar:hover img{
+    transform: translateX(125px);
+}
+
+.sidebar:hover span {
+    opacity: 1; /* Hiển thị text */
+    left: calc(100% + 10px); /* Khoảng cách text so với icon */
+    align-items: center;
+}
+
+.ad-name:hover{
+    cursor: pointer;
+}
+
+/*Tieu de*/
+h2{
+    padding-left: 45%;
+}
+
+.user-sum-container{
+    width: 70%;
+    height: fit-content;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+    border: black solid 1px;
+}
+
+.user-sum{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-total,
+.admin-total {
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: black solid 1px;
+    padding-left: 10px; 
+}
+
+.user-total p,
+.admin-total p{
+    font-weight: 900;
+}
+
+.tieude {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    padding-top: 2%;
+    padding-bottom: 30px;
+    color: #000000;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: #000000;
+    margin: 0 50% 0 1%;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+/*Thong bao*/
+.add-notification {
+    position: fixed;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: red;
+}
+
+.delete-notification {
+    position: fixed;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: red;
+}
+
+/*Form add admin*/
+/* CSS cho trường nhập dữ liệu */
+.add_admin_form{
+    margin-left: 35%;
+}
+
+.add_admin {
+    padding: 8px; /* Khoảng cách giữa nội dung và viền */
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 4px; /* Bo tròn viền */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+/* CSS cho nút xác nhận */
+.add_admin_button {
+    padding: 10px 20px; /* Khoảng cách giữa nội dung và viền */
+    border: none; /* Loại bỏ viền */
+    border-radius: 4px; /* Bo tròn viền */
+    font-size: 16px; /* Kích thước chữ */
+    background-color: #007bff; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+    transition: background-color 0.1s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.add_admin_button:hover {
+    background-color: #0056b3; /* Màu nền khi di chuột qua */
+}
+
+.del_admin_form{
+    margin-left: 35%;
+}
+
+.del_admin {
+    padding: 8px; /* Khoảng cách giữa nội dung và viền */
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 4px; /* Bo tròn viền */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+/* CSS cho nút xác nhận */
+.del_admin_button {
+    padding: 10px 20px; /* Khoảng cách giữa nội dung và viền */
+    border: none; /* Loại bỏ viền */
+    border-radius: 4px; /* Bo tròn viền */
+    font-size: 16px; /* Kích thước chữ */
+    background-color: #007bff; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+    transition: background-color 0.1s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.del_admin_button:hover {
+    background-color: #0056b3; /* Màu nền khi di chuột qua */
+}
+
+

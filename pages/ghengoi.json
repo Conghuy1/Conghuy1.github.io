@@ -1,0 +1,8 @@
+{
+    "seats": [
+      {"id": "seat1", "status": "available"},
+      {"id": "seat2", "status": "occupied"},
+      {"id": "seat3", "status": "available"}
+    ]
+  }
+  

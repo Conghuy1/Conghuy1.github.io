@@ -1,0 +1,548 @@
+body {
+    font-family: "Comfortaa",sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 10px;
+}
+
+header {
+    background-color: #fddd23;
+    color: #000000;
+    display: flex;
+    font-weight: 100;
+    width: 100%;
+    height: 70px;
+    align-items:flex-start;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 70px;
+}
+
+.navbar img {
+    height: 45px;
+}
+
+.navbar-brand img {
+    max-height: 65px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link-active{
+    color:#000000;
+}
+
+.bg-light {
+    background-color: #fddd23; /* Màu nền sáng */
+    /* Các thuộc tính khác có thể được thêm tùy ý */
+}
+
+.nav-item {
+    width: fit-content;
+    height: 100%;
+    padding: 0 2px;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/BG3.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50% , -50%);
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 100px 0;
+}
+
+
+
+.content h2{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    font-size: 3.5em;
+    text-align: center;
+    color:#ffffff;
+}
+
+.content h3{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.login{
+    width: 420px;
+    height: 350px;
+    position: relative;
+    margin-top: -10%;
+    margin-left: 60%;
+    padding: 100px 30px;
+}
+
+.login h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -45px;
+    color: #fff;
+}
+
+.login .input{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.login .input .input1{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+::placeholder{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.login .input i{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    color:#fff;
+}
+
+.forgot{
+    position: relative;
+    left: 35%;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.login .button{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background-color: crimson !important;
+    border: none !important;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 7px;
+    color: #fff;
+    transition: 0.15s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(105%);
+    background-color: crimson !important;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sign-up a{
+    position: relative;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.sign-up a:hover{
+    text-decoration: underline;
+}
+
+
+.error{
+    font-size: 18px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    color: rgb(32, 51, 226);
+    text-align: center;
+    transition: 0.2s;
+}
+
+.noti{
+    font-size: 18px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: 0.2s;
+}
+
+
+/*Footer*/
+
+/* Footer - container2 */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 0;
+    top: -30px;
+}
+
+.img-fluid {
+    display: flex;
+
+}
+
+.container2 img {
+    max-width: 50%;
+}
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer {
+    color: #ffffff;
+}
+
+.list-unstyled {
+    color:#ffffff;
+}
+
+.footer ul li a {
+    color: rgb(255, 255, 255);
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+
+
+/* Reponsive cho thiet bi di dong */
+@media only screen and (max-width: 740px){
+    body {
+        overflow-x: hidden;
+        overflow-y:hidden;
+        margin: 0;
+        height: 10px;
+    }
+    header {
+        background-color: #fddd23;
+        color: #ffffff;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        align-items: flex-start;
+    }
+    
+    .navbar {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%; 
+        height: 40px;
+        margin-bottom: 0; /* Loại bỏ khoảng cách dưới */
+        flex: 6;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        align-items: left;
+        width: 60%; 
+    }
+    
+    .navbar-toggler {
+        position: absolute;
+        left: 10px;
+        font-size: 10px;
+    }
+    .nav-link,
+    .nav-link-active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px; /* Đặt chiều cao của hộp */
+        width: 70%; /* Đặt chiều rộng của hộp */
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        background-color: #fddd23;
+        border: 1px solid #000000;
+        border-radius: 10%;
+        margin-bottom: 2px;
+        font-weight: 100;
+        font-size: 10px;
+        position: relative;
+    }
+    
+    .nav-link::before,
+    .nav-link-active::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000000; /* Màu nền hộp */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: -1;
+    }
+    
+    .nav-item {
+        font-weight: 900;
+        width: 100%;
+        font-size: 8px;
+        z-index: 10;
+    }
+    .navbar-brand img {
+        max-height: 35px;
+        margin-top: -20px;
+        padding-left: 40px;
+    }
+    
+        
+    .background{
+        width: 100%;
+        height: 70vh;
+        background-image: url('../images/BG3.png');
+        background-position: center;
+        background-size: fill;
+    }
+
+    .home {
+        display: block;
+        position: absolute;
+        padding-top: 10%;
+        left: 43%;
+        width: 70%;
+    }
+    .content h2,
+    .content h3 {
+        display: none;
+    }
+
+    .login.container {
+        position:absolute;
+        top: 20%;
+        right: 0;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px; 
+        padding: 35px; 
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login {
+        display: block;
+        position:absolute;
+        margin-left: 5%;
+        width: 80%;
+        height: 300px;
+    }
+
+    .login h2 {
+        position: absolute;
+        top: 18%;
+        right: 35%;
+        font-size: 10px;
+    }
+
+    .login .input .input1{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #ffffff;
+        color: #ffffff;
+        width: 100%;
+    }
+    .form-group.input input::placeholder {
+        font-size: 10px; /* Chọn kích thước chữ phù hợp với bạn */
+    }
+
+    .form-group.input i {
+        font-size: 10px;
+    }
+
+    .btn-primary {
+        width: 120px;
+        background-color: #dc3545; 
+        border-color: #dc3545; 
+        color: #ffffff;
+    }
+
+    .btn-primary:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
+    .error,
+    .noti {
+        font-size: 10px;
+        font-weight: 700;
+        color: #ff0000;
+        text-align: center;
+    }
+
+    .forgot{
+        position: absolute;
+        bottom: 40%;
+        left: 55%;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .forgot a{
+        text-decoration: none;
+        font-size: 8px;
+        color: #fff;
+    }
+
+    .forgot a:hover{
+        text-decoration: underline;
+    }
+
+    .login .button{
+        width: 100%;
+        height: 40px;
+        padding-top: 30px;
+    }
+
+    .btn{
+        width: 90%;
+        height: 30px;
+        background-color: crimson;
+        border: none;
+        outline: none;
+        font-size: 8px;
+        font-weight: 500;
+        margin-left: 5%;
+        border-radius: 7px;
+        color: #fff;
+        transition: 0.15s;
+    }
+
+    .btn:hover{
+        cursor: pointer;
+        transform: scale(105%);
+    }
+
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        bottom: 20px;
+    }
+
+    .sign-up a{
+        margin-top: 10px;
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        font-size: 8px;
+    }
+
+    .sign-up a:hover{
+        text-decoration: underline;
+    }
+
+    /* Footer */
+    /* Thiết lập style cho footer */
+    .footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between; /* Canh giữa các cột */
+        flex-wrap: wrap;
+        height:auto;
+    }
+
+
+    .d-flex .col-md-4{
+        font-size: 8px;
+    }
+    
+    .d-flex .col-md-4 ul li{
+        padding-bottom: 5px;
+    }
+    
+    .social-icons{
+        display: flex;
+    }
+    
+    .social-icons i{
+        font-size: 10px;
+    }    
+    }

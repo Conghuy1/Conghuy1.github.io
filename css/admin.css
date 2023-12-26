@@ -1,0 +1,314 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #4e73df;
+    transition: width 0.3s ease;
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ad{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.ad-name{
+    width: 160px;
+    height: auto;
+    padding: 30px 30px;
+    display: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+.ad img{
+    width: 40px;
+    height: 40px;
+    padding: 15px 15px;
+    transition: 0.3s ease;
+}
+
+.sidebar-icons {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    color: white;
+}
+
+.icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon i {
+    font-size: 20px;
+    color: rgb(155, 155, 155);
+}
+
+
+.icon span {
+    color: rgb(155, 155, 155);
+    opacity: 0;
+    position: absolute;
+}
+
+.icon:hover i,
+.icon:hover span{
+    color: white;
+}
+
+.icon1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon1 i {
+    font-size: 20px;
+    color: white;
+}
+
+
+.icon1 span {
+    color: white;
+    opacity: 0;
+    position: absolute;
+}
+
+/* Khi hover vào sidebar */
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar:hover span{
+    width: 140px;
+}
+
+.sidebar:hover .ad-name{
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.sidebar:hover img{
+    transform: translateX(125px);
+}
+
+.sidebar:hover span {
+    opacity: 1;
+    left: calc(100% + 10px);
+    align-items: center;
+}
+
+.ad-name:hover{
+    cursor: pointer;
+}
+
+/*Header*/
+
+/*Tong quan*/
+.summary-container{
+    display: flex;
+    flex-direction: column;
+    width: 75%; 
+    margin: 2% auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-container p{
+    font-weight: 900;
+}
+
+.summary {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sum1 {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sum-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sum-data {
+/* Thay đổi màu hoặc kiểu chữ cho dữ liệu từ database sau này */
+    font-style: italic;
+    color: gray;
+}
+
+/*Tong kết ngày*/
+button {
+    margin: 30px auto;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+  
+button:hover {
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+  
+button:active {
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(7px);
+    transition: 100ms;
+}
+  
+  
+/*Bieu do*/
+.chart-bxh-container{
+    width: 66.6%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.chart-bxh-container p{
+    margin-left: 5%;
+    font-weight: 900;
+}
+
+.chart-bxh{
+    display: flex;
+    width: 96%;
+    height: auto;
+    flex-direction: row;
+    margin: 2% auto;
+}
+/*Occ*/
+.occChart{
+    width: fit-content;
+    height: fit-content;
+    padding-right: 20px;
+    font-size: 22px;
+}
+
+/*BXH*/
+.bxh-con{
+    width: 40%;
+    margin-left: 50px;
+    padding: 2%;
+    height: 100%;
+}
+
+.bxh-con p{
+    font-weight: 900;
+}
+
+.bxh-con ul li{
+    list-style: decimal;
+}
+
+.bxh-con li{
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+/*Thong ke trong tuan*/
+.week-dashboard-container{
+    display: flex;
+    flex-direction: column;
+    width: 66.6%;
+    margin: 0 auto;
+    margin-top: 75px;
+    padding: 2%;
+    height: fit-content;
+    border: 1px solid black;
+    margin-bottom: 100px;
+}
+
+.week-dashboard-con{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    background-color: #4e73df;
+}
+
+.week-dashboard-charts{
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.revenue-chart{
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+    margin-top: 2%;
+}
+
+.customer-chart{
+    width: 49%;
+    height: 300px;
+    background-color: salmon;
+    margin-top: 2%;
+}
+
+.occ-chart{
+    width: 49%;
+    height: 300px;
+    background-color: salmon;
+    margin-top: 2%;
+    margin-left: 2%;
+}
